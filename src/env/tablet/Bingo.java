@@ -62,10 +62,11 @@ public class Bingo extends Artifact {
 				counter++;
 				getObsProperty("numSorted").updateValue(x);
 				signal("status", "sorted");
-				await_time(3000);	
-			}			
-			if (counter >= MAXNumberSorted)
-				execInternalOp("stop");
+				await_time(2000);	
+			}		
+			//Se quiser limitar a partida a quantidade de numeros sorteados
+			//if (counter >= MAXNumberSorted)
+				//execInternalOp("stop");
 		}		
 	}
 	
