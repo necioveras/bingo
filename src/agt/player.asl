@@ -9,22 +9,11 @@
 /* Plans */
 
 +!participate: true<- 
-	//?myArtifact (ID);	
-	//focus(ID);		
 	.send(owner,askOne, buildCard, Card);
 	+myCard(Card);
 	sell;   //buy	- informa que adquiriu uma cartela
 	.print("Estou no bingo! Registrei minha cartela.").	
 
-/*	
-+?myArtifact(C) : true <-
-	lookupArtifact("bingo", C).	*/
-
-/*	
--?myArtifact(Art) : true <-
-	.wait(1000);
-	.print("Esperando por um bingo.");
-	!participate.	*/
    
 //Perceptions of the signals
 
